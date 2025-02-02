@@ -2,8 +2,9 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/wizard-of-zod-docs/',
   title: "Wizard of Zod",
-  description: "Foo",
+  description: "Documentation for the Wizard of Zod Vue component.",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

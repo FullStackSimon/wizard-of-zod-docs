@@ -25,7 +25,7 @@ I'm excited that you’re interested in contributing to Wizard of Zod! Contribut
   ```bash
   npm run dev
   ```
-- Open your browser and navigate to [http://localhost:5173](http://localhost:5173) to see the project in action.
+- Open your browser and navigate to localhost:5173 to see the project in action.
 
 ### 4. Create a New Branch
 - Create a new branch for your contribution:
