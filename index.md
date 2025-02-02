@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: Wizard of Zod
-  text: Easy Form Stepper For Vue Developers
+  text: Easy Form Stepper For Vue Developersx
   tagline: Form wizards simplified!
   image:
     src: /assets/images/cover.png
