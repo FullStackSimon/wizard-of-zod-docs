@@ -1,0 +1,15 @@
+:root {
+    --vp-c-brand-1: #3EB27F;
+    --vp-c-brand-2: #4af9ab;
+    --vp-c-brand-3: #3EB27F;
+    --vp-home-hero-name-color: #3EB27F;
+    --vp-button-brand-hover-text: var(--vp-c-black);
+}
+
+.medium-zoom-overlay {
+    z-index: 10000 !important;
+}
+
+.medium-zoom-image--opened {
+    z-index: 10001 !important;
+}
