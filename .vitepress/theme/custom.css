@@ -1,9 +1,36 @@
 :root {
-    --vp-c-brand-1: #3EB27F;
-    --vp-c-brand-2: #4af9ab;
-    --vp-c-brand-3: #3EB27F;
-    --vp-home-hero-name-color: #3EB27F;
-    --vp-button-brand-hover-text: var(--vp-c-black);
+    --light-green: #4af9ab;
+    --green: #3EB27F;
+    --dark-green: #33a06f;
+
+    --light-navy: #75b4f4;
+    --navy: #30475E;
+
+    --vp-c-brand-1: var(--green);
+
+    --vp-home-hero-name-color: var(--green);
+
+    --vp-button-brand-bg: var(--green);
+    --vp-button-brand-hover-bg: var(--dark-green);
+    --vp-button-brand-active-bg: var(--navy);
+}
+
+.vp-doc a:hover {
+    color: var(--light-navy);
+}
+
+.tip.custom-block {
+    background-color: #a9eda6;
+}
+
+.dark {
+    .vp-doc a:hover {
+        color: var(--light-green);
+    }
+
+    .tip.custom-block {
+        background-color: #165213;
+    }
 }
 
 .medium-zoom-overlay {

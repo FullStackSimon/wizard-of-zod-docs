@@ -4,10 +4,10 @@ layout: home
 
 hero:
   name: Wizard of Zod
-  text: Easy Form Stepper For Vue Developersx
+  text: Easy Form Stepper For Vue Developers
   tagline: Form wizards simplified!
   image:
-    src: /assets/images/cover.png
+    src: /cover.png
     alt: Wizard of Zod
     style: 'width: 100%; height: auto; max-width: none; max-height: none; border-radius: 1rem;'
   actions:

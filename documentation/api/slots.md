@@ -2,7 +2,7 @@
 
 In these early stages of Wizard of Zod's evolution there are three named slots available.
 
-I have plans to add more over time so if you have any suggestions, please feel free to let me know.
+I have plans to add more over time so if you have any suggestions, please feel free to [let me know](https://github.com/FullStackSimon/wizard-of-zod/discussions).
 
 ## #header
 

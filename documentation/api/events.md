@@ -2,7 +2,7 @@
 
 At this stage in Wizard of Zod’s development, only one event is emitted.
 
-I plan to add more events over time. If you have suggestions, let me know!
+I plan to add more events over time. If you have suggestions, [let me know](https://github.com/FullStackSimon/wizard-of-zod/discussions)!
 
 ## @completed
 

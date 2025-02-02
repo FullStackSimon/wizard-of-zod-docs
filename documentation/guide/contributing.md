@@ -114,7 +114,7 @@ I'm excited that you’re interested in contributing to Wizard of Zod! Contribut
 ## Need Help?
 
 If you have any questions or need assistance, feel free to:
-- Open a discussion or issue on GitHub.
+- Open a [discussion](https://github.com/FullStackSimon/wizard-of-zod/discussions) or [issue](https://github.com/FullStackSimon/wizard-of-zod/issues) on GitHub.
 
 Thank you for your interest in contributing to Wizard of Zod! Together, we can make it even better. 🚀
 
