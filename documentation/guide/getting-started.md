@@ -121,5 +121,3 @@ const handleCompleted = (data: Record<string, any>) => {
   />
 </template>
 ```
-
-See the [examples](examples) section for further examples.
