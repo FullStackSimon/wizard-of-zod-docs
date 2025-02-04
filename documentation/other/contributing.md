@@ -1,6 +1,6 @@
 # Contributing
 
-I'm excited that you’re interested in contributing to Wizard of Zod! Contributions of all kinds are welcome, including code, documentation, bug reports, and feature suggestions.
+I'm excited that you’re interested in contributing to **Wizard of Zod**! Contributions of all kinds are welcome, including code, documentation, bug reports, and feature suggestions.
 
 ## Getting Started
 
@@ -25,7 +25,7 @@ I'm excited that you’re interested in contributing to Wizard of Zod! Contribut
   ```bash
   npm run dev
   ```
-- Open your browser and navigate to localhost:5173 to see the project in action.
+- Open your browser and navigate to localhost:5173 (_or whatever port you are given!_) to see the project in action.
 
 ### 4. Create a New Branch
 - Create a new branch for your contribution:
@@ -50,11 +50,7 @@ I'm excited that you’re interested in contributing to Wizard of Zod! Contribut
   - Any potential challenges or considerations.
 
 ### 3. Code Contributions
-- Follow the steps in [Getting Started](./getting-started) to set up the project.
-- Ensure your code adheres to the project’s style and linting rules by running:
-  ```bash
-  npm run lint
-  ```
+- Follow the steps in [Getting Started](../guide/getting-started.html) to set up the project.
 - Write unit tests for your changes, if applicable. Run the test suite to ensure all tests pass:
   ```bash
   npm run test
@@ -67,7 +63,7 @@ I'm excited that you’re interested in contributing to Wizard of Zod! Contribut
   ```bash
   git push origin my-feature-branch
   ```
-- Open a pull request (PR) against the `main` branch of the original repository.
+- Open a pull request (PR) against the `master` branch of the original repository.
 
 ### 4. Documentation Improvements
 - Improve or add documentation in Markdown files (`README.md`, etc.).
@@ -89,14 +85,10 @@ I'm excited that you’re interested in contributing to Wizard of Zod! Contribut
   - `chore:` for maintenance or minor updates.
 
 ### Pull Request Checklist
-- Ensure your branch is up to date with `main`:
+- Ensure your branch is up to date with `master`:
   ```bash
   git fetch origin
-  git rebase origin/main
-  ```
-- Check for linting errors:
-  ```bash
-  npm run lint
+  git rebase origin/master
   ```
 - Run all tests and confirm they pass:
   ```bash

@@ -9,8 +9,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Documentation', link: '/documentation/guide/' },
-      { text: 'xExamples', link: '/markdown-examples' }
+      { text: 'Documentation', link: 'documentation/guide' },
     ],
 
     outline: {
@@ -20,10 +19,9 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Introduction',
+        link: '/documentation/guide/',
         items: [
-          { text: 'What is Wizard of Zod?', link: '/documentation/guide/' },
-          { text: 'Getting Started', link: '/documentation/guide/getting-started' },
-          { text: 'Contributing', link: '/documentation/guide/contributing' },
+          { text: 'Getting Started', link: '/documentation/guide/getting-started' }
         ]
       },
       {
@@ -53,22 +51,78 @@ export default defineConfig({
         ]
       },
       {
-        text: 'xExamples',
+        text: 'Examples',
+        collapsed: true,
         items: [
-          { text: 'xMarkdown Examples', link: '/markdown-examples' },
-          { text: 'xRuntime API Examples', link: '/api-examples' }
+          { text: 'Kitchen Sink', link: '/documentation/examples/kitchen-sink' },
+          {
+            text: 'Layout',
+            collapsed: true,
+            items: [
+              { text: 'Basic', link: '/documentation/examples/layout/basic' },
+              { text: 'Default', link: '/documentation/examples/layout/default' }
+            ]
+          },
+          {
+            text: 'i18n',
+            collapsed: true,
+            items: [
+              { text: 'Lang', link: '/documentation/examples/i18n/lang' },
+              { text: 'Custom I18n', link: '/documentation/examples/i18n/custom-i18n' }
+            ]
+          },
+          { text: 'Classes', link: '/documentation/examples/classes' },
+          {
+            text: 'Forms',
+            collapsed: true,
+            items: [
+              { text: 'Two Steps', link: '/documentation/examples/forms/two-steps' },
+              { text: 'Three Steps', link: '/documentation/examples/forms/three-steps' },
+            ]
+          },
+          { text: 'Initial Answers', link: '/documentation/examples/initial-answers' },
+          {
+            text: 'Preview',
+            collapsed: true,
+            items: [
+              { text: 'Cards', link: '/documentation/examples/preview/cards' },
+              { text: 'List', link: '/documentation/examples/preview/list' },
+              { text: 'Table', link: '/documentation/examples/preview/table' }
+            ]
+          },
+          {
+            text: 'Progress Indicator',
+            collapsed: true,
+            items: [
+              { text: 'Bar', link: '/documentation/examples/progress-indicator/bar' },
+              { text: 'Stepper', link: '/documentation/examples/progress-indicator/stepper' },
+              { text: 'Custom', link: '/documentation/examples/progress-indicator/custom' }
+            ]
+          },
         ]
       },
       {
         text: 'Other Pages',
         items: [
+          { text: 'Contributing', link: '/documentation/other/contributing' },
           { text: 'Code of Conduct', link: '/documentation/other/code-of-conduct' },
         ]
       },
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+      { icon: 'github', link: 'https://github.com/FullStackSimon/wizard-of-zod' }
+    ],
+
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2025-present Simon Kinsella'
+    },
+
+    editLink: {
+      pattern: 'https://github.com/FullStackSimon/wizard-of-zod-docs/edit/master/:path'
+    },
+
+    lastUpdated: true
   }
 })

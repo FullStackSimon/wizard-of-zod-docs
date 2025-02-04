@@ -4,8 +4,7 @@ layout: home
 
 hero:
   name: Wizard of Zod
-  text: Easy Form Stepper For Vue Developers
-  tagline: Form wizards simplified!
+  text: Easy Form Stepper For Shadcn-Vue
   image:
     src: /cover.png
     alt: Wizard of Zod
@@ -13,19 +12,13 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /markdown-examples
-    - theme: alt
-      text: Documentation
-      link: /api-examples
+      link: /documentation/guide
     - theme: alt
       text: API
       link: /documentation/api/
-    - theme: alt
-      text: Examples
-      link: /api-examples
 
 features:
-  - title: ShadCn Components
+  - title: Shadcn-Vue Components
     details: Beautifully designed and easy on the eye, simple components ready for use.
   - title: Tailwind CSS Styling
     details: The utility-first CSS classes you know and love to make styling and customisation a breeze.

@@ -88,8 +88,6 @@ Arguably the most important of all the props is the `forms` prop. Not only is it
 
 Each [Form](./types.html#form) you provide in this array will be converted to a single step in the `Wizard`. So if you provide 3 forms in this array, the Wizard will consist of 3 steps.
 
----
-
 #### schema
 
 The schema is where the magic happens. Pass a [Zod](https://zod.dev/) schema and watch as the [AutoForm](https://www.shadcn-vue.com/docs/components/auto-form.html) component from shadcn-vue.com automatically renders the most appropriate field (or multiple fields) to collect input from the user for that step.
@@ -107,11 +105,7 @@ The following table shows the mapping of Zod schemas to rendered [shadcn-vue.com
 
 You can also provide a custom component of your own for any schema. Learn more about this on the [shadcn-vue.com AutoForm component docs](https://www.shadcn-vue.com/docs/components/auto-form.html#component).
 
----
-
-#### fieldConfig
-
-`optional`
+#### fieldConfig <Badge type="info" text="optional" />
 
 As [Zod](https://zod.dev) doesn't allow adding other properties to the schema, you can use the fieldConfig prop to add additional configuration for the UI of each field.
 
@@ -157,27 +151,17 @@ const forms: Form<z.ZodObject<any>>[] = [
 
 You can use the inputProps property to pass props to the input component. You can use any props (attributes) that the HTML component accepts.
 
----
-
-#### title
-
-`optional`
+#### title <Badge type="info" text="optional" />
 
 When an optional title (`string`) is provided in a [Form](./types.html#form), a `<h1>` title will be displayed above that form.
 
----
-
-#### description
-
-`optional`
+#### description <Badge type="info" text="optional" />
 
 When an optional description (`string`) is provided in a [Form](./types.html#form), a `<p>` paragraph will be displayed above that form - following the title (above) if it has also been provided.
 
----
-
 This example presents a wizard consisting of 3 steps.
 
-```vue
+```vue {6-22,31}
 <script setup lang='ts'>
 import { z } from 'zod'
 import type { Form } from 'wizard-of-zod/types'
@@ -327,79 +311,3 @@ See the [progress indicator](../customisation/progress-indicator.html) guide to 
   ...
 />
 ```
-
-## Kitchen Sink Example
-
-The following example presents a wizard with two steps. Three questions on the first step, and two on the second step.
-
-The following items are also demonstrated:
-
-- `givenName` has been pre-populated and set as readonly.
-- The background colour and text colour of the boilerplate have been customised.
-- The next and previous button labels have been customised.
-- The preview screen will display a table
-
-### Code
-
-```vue
-<script setup lang='ts'>
-import { z } from 'zod'
-import type { Form } from 'wizard-of-zod/types'
-import Wizard from 'wizard-of-zod'
-
-const forms: Form<z.ZodObject<any>>[] = [
-  {
-    title: 'Personal Details',
-    description: 'We ask for these details so we know how to address you.',
-    schema: z.object({
-      givenName: z.string().describe('What is your given name?'),
-      familyName: z.string().describe('What is your family name?'),
-      gender: z.enum(['male', 'female']).describe('What is your gender?')
-    }),
-    fieldConfig: {
-      givenName: {
-        inputProps: {
-          readonly: true
-        }
-      }
-    }
-  },
-  {
-    title: 'Contact Details',
-    description: 'We ask for these so we can contact you if we need to.',
-    schema: z.object({
-      email: z.string().describe('What is your email address?'),
-      phone: z.string().describe('What is your phone number?')
-    })
-  }
-]
-
-const initialAnswers = {
-    givenName: 'John',
-    email: 'john.doe@example.com'
-}
-
-const handleCompleted = (data: Record<string, any>) => {
-  console.log(data)
-}
-</script>
-
-<template>
-  <Wizard
-    :classes="{ woz: 'bg-gray-500 text-gray-900' }"
-    :custom-i18n="{
-      next: 'Continue',
-      previous: 'Go Back'
-    }"
-    :forms="forms"
-    :initial-answers="initialAnswers"
-    preview="table"
-    progress-indicator="stepper"
-    @completed="handleCompleted"
-  />
-</template>
-```
-
-### xScreenshot
-
-### xResulting Data

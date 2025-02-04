@@ -8,7 +8,7 @@ The `default` layout includes header and footer slots whereas the `basic` layout
 
 My rationale for creating the `default` layout was to offer a header slot and a footer slot for those who require them.
 
-### Markup Overview
+### Template
 
 The following markup illustrates container wrappers `default` layout which can be styled with the [classes](../api/props.html#classes) prop.
 
@@ -31,7 +31,7 @@ The following markup illustrates container wrappers `default` layout which can b
 </div>
 ```
 
-### Annotated Screenshot
+### Screenshot
 
 As you can see, the `default` layout includes a header slot and a footer slot for your convenience.
 
@@ -43,6 +43,8 @@ As you can see, the `default` layout includes a header slot and a footer slot fo
 ## Basic Layout
 
 The basic layout is the Ryanair of layouts... no frills!
+
+### Template
 
 ```html [basic]
 <div id="woz">
@@ -61,6 +63,8 @@ The basic layout is the Ryanair of layouts... no frills!
 </div>
 ```
 
+### Screenshot
+
 ## Other Layouts
 
-I plan on adding further layout ideas in the near future. I will also consider any layout ideas that you may have.
+I plan on adding further layout ideas in the near future. I will also consider any layout ideas that you may have. Please [let me know](https://github.com/FullStackSimon/wizard-of-zod/discussions)!
